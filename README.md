@@ -30,7 +30,6 @@
         environment:
           - MCPO_PORT=8000
           - MCPO_API_KEY=your-secret-api-key
-        command: CMD ["/app/start.sh"]
         restart: unless-stopped
     ```
 

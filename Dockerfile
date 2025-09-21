@@ -25,3 +25,8 @@ ENV PATH="${BUN_INSTALL}/bin:${PATH}"
 # 3)  安装 Python 依赖
 # ---------------------------
 RUN pip install --no-cache-dir mcpo uv
+
+# ---------------------------
+# 4)  启动 mcpo
+# ---------------------------
+CMD ["/app/start.sh"]
