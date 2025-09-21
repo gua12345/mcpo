@@ -11,7 +11,7 @@ API_KEY=${MCPO_API_KEY:-$DEFAULT_API_KEY}
 # 构建mcpo启动命令
 CMD="mcpo --port $PORT --api-key \"$API_KEY\""
 
-elif [ -n "$MCP_SERVER_COMMAND" ]; then
+if [ -n "$MCP_SERVER_COMMAND" ]; then
     CMD="$CMD -- $MCP_SERVER_COMMAND"
 fi
 
