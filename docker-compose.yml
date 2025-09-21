@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  mcpo:
+    image: gua12345/mcpo:latest
+    container_name: mcpo
+    volumes:
+      - ./config.json:/app/config.json
+    ports:
+      - "8000:8000"
+    command: CMD ["/app/start.sh"]
+    restart: unless-stopped
