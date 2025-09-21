@@ -9,7 +9,7 @@ PORT=${MCPO_PORT:-$DEFAULT_PORT}
 API_KEY=${MCPO_API_KEY:-$DEFAULT_API_KEY}
 
 # 构建mcpo启动命令
-CMD="mcpo --port $PORT --api-key \"$API_KEY\""
+CMD="mcpo --port $PORT --api-key \"$API_KEY\" --config \"/app/config.json\""
 
 if [ -n "$MCP_SERVER_COMMAND" ]; then
     CMD="$CMD -- $MCP_SERVER_COMMAND"
